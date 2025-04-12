@@ -1,0 +1,22 @@
+RewriteEngine On
+
+
+
+# Rewrite rule for product pages
+
+RewriteRule ^project/([a-zA-Z0-9_-]+)/?$ project-detail.php?page_url=$1 [L,QSA]
+
+
+
+# Rewrite rule for blog pages
+
+RewriteRule ^blog/([a-zA-Z0-9_-]+)/?$ blog.php?page_url=$1 [L,QSA]
+
+
+
+# Optional: Redirect to a custom 404 page if no match is found
+
+ErrorDocument 404 /404.html
+
+
+
