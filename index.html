@@ -14,106 +14,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Auctech Portfolio</title>
 
-
 <style>
-
-
-
-/* ------------ */
-
-.demo-section {
-  padding: 40px 20px;
-  background: #fff;
-  text-align: center;
-}
-
-.demo-heading {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.demo-heading span {
-  color: #1a73e8;
-}
-
-.demo-nav-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.demo-nav {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 16px;
-  padding: 10px 40px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.demo-nav::-webkit-scrollbar {
-  display: none;
-}
-
-.demo-nav a {
-  flex: 0 0 auto;
-  padding: 10px 16px;
-  border-radius: 30px;
-  background: #f1f1f1;
-  color: #333;
-  font-weight: 500;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: all 0.3s ease;
-}
-
-.demo-nav a:hover,
-.demo-nav a.active {
-  background: #1a73e8;
-  color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.scroll-btn {
-  position: absolute;
-  z-index: 1;
-  background: white;
-  border: none;
-  font-size: 12px;
-  height: 25px;
-  width: 25px;
-  
-  cursor: pointer;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  transition: all 0.2s ease;
-}
-
-.scroll-btn:hover {
-  background-color: #1a73e8;
-  color: white;
-}
-
-.scroll-btn.left {
-  left: -35px;
-}
-
-.scroll-btn.right {
-  right: -35px;
-}
-
-.demo-section {
-    padding: 40px 2px;
-    background: #fff;
-    text-align: center;
-}
-
-
-
-/* ------------- */
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     :root {
         --cnvs-primary-font:  "Work Sans", sans-serif;
@@ -121,33 +22,6 @@
         --cnvs-themecolor: #1a73e8;
         --cnvs-themecolor-rgb: 26, 115, 232
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
     .demos-text-rotator {
         font-size: 7vw
@@ -706,38 +580,29 @@
                         </div>
                         <div class="row" id="niche-demos-grid-container">
                             <div class="col-12">
-                                <!-- Add this to your HTML -->
-                                 
-                                <section class="demo-section">
-                                 
-                                    <div class="demo-nav-wrapper">
-                                      <button class="scroll-btn left" id="scrollLeft">&#10094;</button>
-                                      <div class="demo-nav" id="demoNav">
-                                        <a href="#">All Demos</a>
-                                        <a href="#">Business</a>
-                                        <a href="#">eCommerce</a>
-                                        <a href="#">Portfolio</a>
-                                        <a href="#">SAAS</a>
-                                        <a href="#">Landing</a>
-                                        <a href="#">One-Page</a>
-                                        <a href="#">Media</a>
-                                        <a href="#">Listings</a>
-                                        <a href="#">Creative</a>
-                                        <a href="#">Clean</a>
-                                        <a href="#">Resume</a>
-                                        <a href="#">Health & Beauty</a>
-                                        <a href="#">Food</a>
-                                        <a href="#">Forums</a>
-                                        <a href="#">Travel</a>
-                                        <a href="#">Events</a>
-                                        <a href="#">Extras</a>
-                                      </div>
-                                      <button class="scroll-btn right" id="scrollRight">&#10095;</button>
-                                    </div>
-                                  </section>
-                                  
-  
-                                
+                                <div id="niche-demos-grid-filter" class="grid-filter-wrap">
+                                    <ul class="grid-filter style-2" data-container="#niche-demos-grid">
+                                        <li class="activeFilter"><a data-filter="*" href="#">All Demos</a></li>
+                                        <li><a data-filter=".nd-business" href="#">Business</a></li>
+                                        <li><a data-filter=".nd-ecommerce" href="#">eCommerce</a></li>
+                                        <li><a data-filter=".nd-portfolio" href="#">Portfolio</a></li>
+                                        <li><a data-filter=".nd-saas" href="#">SAAS</a></li>
+                                        <li><a data-filter=".nd-landing" href="#">Landing</a></li>
+                                        <li><a data-filter=".nd-onepage" href="#">One-Page</a></li>
+                                        <li><a data-filter=".nd-media" href="#">Media</a></li>
+                                        <li><a data-filter=".nd-listings" href="#">Listings</a></li>
+                                        <li><a data-filter=".nd-creative" href="#">Creative</a></li>
+                                        <li><a data-filter=".nd-clean" href="#">Clean</a></li>
+                                        <li><a data-filter=".nd-resume" href="#">Resume</a></li>
+                                        <li><a data-filter=".nd-health" href="#">Health & Beauty</a></li>
+                                        <li><a data-filter=".nd-magazine" href="#">Magazine</a></li>
+                                        <li><a data-filter=".nd-food" href="#">Food</a></li>
+                                        <li><a data-filter=".nd-forums" href="#">Forums</a></li>
+                                        <li><a data-filter=".nd-travel" href="#">Travel</a></li>
+                                        <li><a data-filter=".nd-events" href="#">Events</a></li>
+                                        <li><a data-filter=".nd-extras" href="#">Extras</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="col-12">
                                 <div id="niche-demos-grid" class="row g-4 text-center grid-container overflow-visible"
@@ -3806,27 +3671,6 @@
         style="--cnvs-gotoTop-bg:var(--cnvs-contrast-800)"></div>
     <script src="js/plugins.min.js"></script>
     <script src="js/functions.bundle.js"></script>
-    <script>
-        const scrollContainer = document.getElementById("demoNav");
-        const scrollLeft = document.getElementById("scrollLeft");
-        const scrollRight = document.getElementById("scrollRight");
-      
-        scrollLeft.addEventListener("click", () => {
-          scrollContainer.scrollBy({
-            left: -200,
-            behavior: "smooth"
-          });
-        });
-      
-        scrollRight.addEventListener("click", () => {
-          scrollContainer.scrollBy({
-            left: 200,
-            behavior: "smooth"
-          });
-        });
-      </script>
-      
-      
 </body>
 
 </html>
