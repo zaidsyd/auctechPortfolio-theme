@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from canvastemplate.com/block-misc-rotate-text.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 11:27:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description" content="Get Canvas to build powerful theme of the website websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital@0;1&amp;display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Rotate onScroll | Canvas</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap bg-light overflow-visible scroll-detect">
+				<div class="container">
+
+					<div class="min-vh-25"></div>
+
+					<h3>Rotate Circular Text On Scroll Effect</h3>
+
+					<div class="circular-text position-fixed" style="min-width: 300px; max-height: 300px; top: 20px; right: 20px;">
+						<div>
+							<h4 class="rotated-text text-uppercase m-0 all-ts" style="--cnvs-transitions:.1s linear; transform:rotate(calc(3.6deg * var(--cnvs-scroll-percent)));">
+								&nbsp;Corporate | Portfolio | Business | Real Estate | Medical | Construction |&nbsp;
+							</h4>
+							<h2 class="position-absolute top-50 start-50 translate-middle mb-0">Demos</h2>
+						</div>
+					</div>
+
+					<div style="height: 1000px;"></div>
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="../cdn.jsdelivr.net/npm/circletype%402.3.0/dist/circletype.min.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+	<script>
+		var circularText = document.getElementsByClassName("rotated-text");
+
+		[].forEach.call( circularText, function(element) {
+			var circleType = new CircleType( element ).radius(80);
+		});
+	</script>
+
+</body>
+
+<!-- Mirrored from canvastemplate.com/block-misc-rotate-text.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 11:27:02 GMT -->
+</html>

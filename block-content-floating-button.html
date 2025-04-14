@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from canvastemplate.com/block-content-floating-button.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 11:27:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital@0;1&amp;display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Floating Button | Canvas</title>
+
+	<style>
+
+		#wrapper::after {
+			content: "";
+			opacity: 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: transparent;
+			transition: opacity 0.3s, background-color 0.2s ease;
+		}
+
+		.floating-btn-open #wrapper::after {
+			opacity: 1;
+			background-color: rgba(0, 0, 0, 0.75);
+		}
+
+		.floating-btn-wrap {
+			--cnvs-floating-btn-size: 4rem;
+			--cnvs-floating-btn-pos-right: var(--cnvs-floating-btn-size);
+			--cnvs-floating-btn-pos-bottom: var(--cnvs-floating-btn-size);
+			--cnvs-floating-btn-transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+			--cnvs-floating-btn-bg-color: var(--cnvs-themecolor);
+			--cnvs-floating-btn-icon-color: #FFF;
+			--cnvs-floating-btn-bg-active-color: var(--bs-dark);
+			--cnvs-floating-btn-box-width: 25rem;
+			--cnvs-floating-btn-box-padding: 2rem;
+			--cnvs-floating-btn-box-radius: .3rem;
+			--cnvs-floating-btn-box-bg: #FFF;
+			--cnvs-floating-btn-box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.07);
+
+
+			position: fixed;
+			right: var(--cnvs-floating-btn-pos-right);
+			bottom: var(--cnvs-floating-btn-pos-bottom);
+			z-index: 199;
+		}
+
+		.floating-btn-wrap .floating-btn {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: var(--cnvs-floating-btn-size);
+			height: var(--cnvs-floating-btn-size);
+			border-radius: var(--cnvs-floating-btn-size);
+			background-color: var(--cnvs-floating-btn-bg-color);
+			color: var(--cnvs-floating-btn-icon-color);
+			cursor: pointer;
+			z-index: 3;
+			transform: translate(-50%, -50%);
+			transition: transform .3s ease;
+		}
+
+		.floating-btn-wrap .floating-btn:hover,
+		.floating-btn-open .floating-btn-wrap .floating-btn {
+			transform: translate(-50%, -50%) scale(1.1);
+			background-color: var(--cnvs-floating-btn-bg-active-color);
+		}
+
+		.floating-btn-wrap .floating-btn .floating-btn-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: calc(var(--cnvs-floating-btn-size) * .5);
+			-webkit-transition: var(--cnvs-floating-btn-transition);
+			transition: var(--cnvs-floating-btn-transition);
+			-webkit-transition-property: opacity, -webkit-transform;
+			transition-property: opacity, transform;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			-webkit-backface-visibility: hidden;
+		}
+
+		.floating-btn-wrap .floating-btn .floating-btn-icon.btn-active,
+		.floating-btn-open .floating-btn-wrap .floating-btn .floating-btn-icon {
+			opacity: 0;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		.floating-btn-open .floating-btn-wrap .floating-btn .floating-btn-icon.btn-active {
+			opacity: 1;
+			-webkit-transform: translate(-50%, -50%) rotate(-45deg);
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+
+		.floating-btn-wrap .floating-btn-box {
+			opacity: 0;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: var(--cnvs-floating-btn-box-width);
+			background-color: var(--cnvs-floating-btn-box-bg);
+			border-radius: var(--cnvs-floating-btn-box-radius);
+			z-index: 1;
+			padding: var(--cnvs-floating-btn-box-padding);
+			-webkit-transform-origin: right bottom;
+			transform-origin: right bottom;
+			box-shadow: var(--cnvs-floating-btn-box-shadow);
+			-webkit-transform: scale(.01);
+			transform: scale(.01);
+			-webkit-transition: all var(--cnvs-floating-btn-transition);
+			transition: all var(--cnvs-floating-btn-transition);
+			-webkit-backface-visibility: hidden;
+		}
+
+		.floating-btn-open .floating-btn-wrap .floating-btn-box {
+			opacity: 1;
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+
+		.floating-btn-wrap + #gotoTop {
+			left: 40px;
+			right: auto;
+		}
+
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container mw-sm">
+
+					<h2 class="fw-bold display-5 mb-5">Floating Popup Button</h2>
+
+					<p class="text-larger mb-0">Distinctively build an expanded array of methods of empowerment before magnetic infrastructures. Credibly promote ethical value whereas resource maximizing web services. Quickly strategize inexpensive technology with 2.0 convergence. Interactively develop functional innovation before stand-alone e-business. Monotonectally network corporate relationships without multimedia based infrastructures. <br><br>
+
+					Appropriately productize optimal growth strategies without functionalized bandwidth. Authoritatively engineer quality e-markets for professional ROI. Interactively engage e-business solutions through turnkey applications. Continually procrastinate global resources whereas cross-platform processes. Professionally supply long-term high-impact quality vectors without backend sources.<br><br>
+
+					Proactively incentivize real-time networks without wireless resources. Collaboratively revolutionize backward-compatible web-readiness vis-a-vis state of the art results. Proactively streamline client-centered services and best-of-breed leadership. Synergistically drive B2B action items before process-centric users. Proactively matrix enabled best practices whereas highly efficient internal or "organic" sources.<br><br>
+
+					Dramatically cultivate quality value with empowered quality vectors. Completely actualize covalent e-services via covalent total linkage. Credibly evolve cost effective e-business for quality quality vectors. Uniquely e-enable impactful partnerships for flexible metrics. Uniquely incubate B2B collaboration and idea-sharing whereas just in time synergy.<br><br>
+
+					Proactively plagiarize 2.0 quality vectors through premier testing procedures. Dramatically procrastinate bricks-and-clicks expertise whereas clicks-and-mortar systems. Rapidiously morph process-centric ROI rather than frictionless data. Dynamically incubate principle-centered e-markets via sustainable niche markets. Energistically re-engineer low-risk high-yield strategic theme areas whereas bricks-and-clicks imperatives.<br><br>
+
+					Energistically impact corporate action items with intuitive strategic theme areas. Monotonectally plagiarize real-time web-readiness rather than enterprise supply chains. Intrinsicly underwhelm long-term high-impact sources whereas quality portals. Globally scale intuitive best practices after sticky communities. Completely supply professional metrics rather.</p>
+
+				</div>
+
+			</div>
+		</section><!-- #content end -->
+
+	</div><!-- #wrapper end -->
+
+	<div class="floating-btn-wrap">
+		<div class="floating-btn shadow">
+			<i class="floating-btn-icon btn-unactive uil uil-plus"></i>
+			<i class="floating-btn-icon btn-active uil uil-plus"></i>
+		</div>
+
+		<div class="floating-btn-box">
+			<h3 class="mb-3">Send us a Message</h3>
+			<div class="form-widget">
+				<div class="form-result"></div>
+				<form class="mb-0" id="template-contactform" name="template-contactform" action="https://canvastemplate.com/include/form.php" method="post">
+
+					<div class="form-process">
+						<div class="css3-spinner">
+							<div class="css3-spinner-scaler"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 form-group">
+							<label for="template-contactform-name">Name <small>*</small></label>
+							<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control required">
+						</div>
+
+						<div class="col-12 form-group">
+							<label for="template-contactform-email">Email <small>*</small></label>
+							<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email form-control">
+						</div>
+
+						<div class="w-100"></div>
+
+						<div class="col-12 form-group">
+							<label for="template-contactform-message">Message <small>*</small></label>
+							<textarea class="required form-control" id="template-contactform-message" name="template-contactform-message" rows="4" cols="30"></textarea>
+						</div>
+
+						<div class="col-12 form-group d-none">
+							<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="form-control">
+						</div>
+
+						<div class="col-12 form-group">
+							<button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+						</div>
+					</div>
+
+					<input type="hidden" name="prefix" value="template-contactform-">
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+	<script>
+		jQuery(document).ready( function(){
+			var elementParent = jQuery('body');
+			jQuery('.floating-btn').off( 'click' ).on( 'click', function() {
+				elementParent.toggleClass('floating-btn-open');
+			});
+		});
+
+		jQuery(document).on('click', function(event) {
+			if (!jQuery(event.target).closest('.floating-btn-wrap').length) {
+				jQuery('body').toggleClass('floating-btn-open', false );
+			}
+		});
+	</script>
+
+</body>
+
+<!-- Mirrored from canvastemplate.com/block-content-floating-button.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 11:27:06 GMT -->
+</html>

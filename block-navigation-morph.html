@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from canvastemplate.com/block-navigation-morph.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 11:27:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;family=Noto+Serif:ital,wght@1,700&amp;display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="css/swiper.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Morph Header Menu - Navigation | Canvas</title>
+
+	<style>
+		@media (min-width: 992px) {
+			.morph-marker {
+				--cnvs-morph-height: 3px;
+				--cnvs-morph-duration: .3s;
+				position: absolute;
+				display: block;
+				background: var(--cnvs-themecolor);
+				height: var(--cnvs-morph-height);
+				border-radius: var(--bs-border-radius);
+				transition: all var(--cnvs-morph-duration);
+			}
+
+			.morph-bg .morph-marker {
+				--cnvs-morph-height: 100%;
+				opacity: .1;
+				bottom: 0 !important;
+			}
+
+			.morph-bg .menu-link {
+				position: relative;
+				--cnvs-primary-menu-padding-y: 11px;
+				--cnvs-primary-menu-hover-color: var(--cnvs-primary-menu-color);
+				z-index: 1;
+			}
+		}
+	</style>
+
+</head>
+
+<body class="stretched block-nav-header">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+		<div class="vh-25"></div>
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="header-size-md">
+			<div id="header-wrap" class="border-bottom-0">
+				<div class="container position-relative">
+					<div class="header-row justify-content-center">
+
+						<!-- Primary Navigation icon in mobile
+						============================================= -->
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+							<ul class="menu-container">
+								<li class="menu-item current">
+									<a class="menu-link" href="#"><div>Home</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Features</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Pages &amp; Templates</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Portfolio</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Shop</div></a>
+								</li>
+								<li class="menu-item mega-menu">
+									<a class="menu-link" href="#"><div>Shortcodes</div></a>
+								</li>
+								<div class="morph-marker"></div>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+
+				<div class="clear w-100 vh-25"></div>
+
+				<div class="container position-relative">
+					<div class="header-row justify-content-center">
+
+						<!-- Primary Navigation icon in mobile
+						============================================= -->
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu morph-bg">
+
+							<ul class="menu-container">
+								<li class="menu-item current">
+									<a class="menu-link" href="#"><div>Home</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Features</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Pages &amp; Templates</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Portfolio</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Shop</div></a>
+								</li>
+								<li class="menu-item mega-menu">
+									<a class="menu-link" href="#"><div>Shortcodes</div></a>
+								</li>
+								<div class="morph-marker"></div>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+	<script src="../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<script>
+		jQuery(window).on( 'load', function(){
+			jQuery('.primary-menu').each( function(){
+				let menuEl = jQuery(this),
+					marker = menuEl.find('.morph-marker'),
+					current = menuEl.find('.current');
+
+				// Initialize the marker position and the active class
+				current.addClass('active');
+
+				marker.css({
+					// Place the marker in the middle of the border
+					bottom: -(marker.height() / 2),
+					left: current.position().left,
+					width: current.outerWidth(),
+				});
+
+
+				if (Modernizr.csstransitions) {
+					// console.log("using css3 transitions");
+					menuEl.find('.menu-item').mouseover(function () {
+						var self = jQuery(this),
+							offsetLeft = self.position().left,
+
+						// Use the element under the pointer OR the current page item
+						width = self.outerWidth() || current.outerWidth(),
+						// Ternary operator, because if using OR when offsetLeft is 0, it is considered a falsy value, thus causing a bug for the first element.
+						left = offsetLeft == 0 ? 0 : offsetLeft || current.position().left;
+						// Play with the active class
+						menuEl.find('.active').removeClass('active');
+						self.addClass('active');
+						marker.css({
+							left: left,
+							width: width,
+						});
+					});
+
+					// When the mouse leaves the menu
+					menuEl.find('.menu-container').mouseleave(function () {
+					// remove all active classes, add active class to the current page item
+						menuEl.find('.active').removeClass('active');
+						current.addClass('active');
+					// reset the marker to the current page item position and width
+						marker.css({
+							left: current.position().left,
+							width: current.outerWidth()
+						});
+					});
+
+				} else {
+
+					menuEl.find('.menu-item').mouseover(function () {
+						var self = jQuery(this),
+							offsetLeft = self.position().left,
+							// Use the element under the pointer OR the current page item
+							width = self.outerWidth() || current.outerWidth(),
+							// Ternary operator, because if using OR when offsetLeft is 0, it is considered a falsy value, thus causing a bug for the first element.
+							left = offsetLeft == 0 ? 0 : offsetLeft || current.position().left;
+						// Play with the active class
+						menuEl.find('.active').removeClass('active');
+						self.addClass('active');
+						marker.stop().animate({
+							left: left,
+							width: width,
+						}, 300);
+					});
+
+					// When the mouse leaves the menu
+					menuEl.find('.menu-container').mouseleave(function () {
+						// remove all active classes, add active class to the current page item
+						menuEl.find('.active').removeClass('active');
+						current.addClass('active');
+						// reset the marker to the current page item position and width
+						marker.stop().animate({
+							left: current.position().left,
+							width: current.outerWidth()
+						}, 300);
+					});
+				}
+			});
+		});
+	</script>
+
+</body>
+
+<!-- Mirrored from canvastemplate.com/block-navigation-morph.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 11:27:25 GMT -->
+</html>

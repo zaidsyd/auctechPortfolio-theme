@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from canvastemplate.com/block-navigation-expand.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 11:27:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../use.typekit.net/hok5sht.css">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="css/swiper.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Menu - Navigation | Canvas</title>
+
+	<style>
+        .navbar {
+            --cnvs-navbar-width: 17.6rem;
+            --bs-scroll-height: 15.5rem;
+            --cnvs-navbar-offset: 1.5rem;
+            --cnvs-navbar-bg: var(--bs-gray-100);
+            --cnvs-navbar-link: var(--bs-dark);
+            --cnvs-navbar-linecolor: var(--bs-gray-300);
+            --cnvs-navbar-logo-color: var(--cnvs-navbar-link);
+            --cnvs-navbar-border-radius: 10px;
+            --bs-navbar-padding-x: 15px;
+            --bs-navbar-color: var(--cnvs-contrast-0);
+            --bs-navbar-toggler-bg: var(--cnvs-contrast-1000);
+            position: absolute;
+            width: var(--cnvs-navbar-width);
+            top: var(--cnvs-navbar-offset);
+            right: var(--cnvs-navbar-offset);
+            left: auto;
+            border-radius: var(--cnvs-navbar-border-radius);
+            background-color: var(--cnvs-navbar-bg);
+            transition: all .4s;
+        }
+
+        .navbar .line {
+            border-color: var(--cnvs-navbar-linecolor);
+            transition: border-color .3s;
+        }
+
+        .navbar-brand {
+            color: var(--cnvs-navbar-logo-color) !important;
+            transition: color .3s;
+        }
+
+        .navbar-collapse .nav-link {
+            opacity: 0;
+            transition: opacity .3s .03s ease;
+        }
+
+        .navbar-collapse.show .nav-link {
+            opacity: 1;
+            transition: opacity .3s ease;
+        }
+
+        .navbar-nav {
+            --bs-nav-link-padding-y: .5rem;
+            --bs-nav-link-font-size: 1.125rem;
+            --bs-nav-link-color: var(--cnvs-navbar-link);
+            --bs-nav-link-hover-color: var(--bs-nav-link-color);
+            --bs-nav-link-font-weight: 600;
+        }
+
+        .navbar-nav ul .nav-link {
+            --bs-nav-link-padding-x: 1.5rem;
+            --bs-nav-link-font-size: 1rem;
+            --bs-nav-link-font-weight: 400;
+        }
+
+        .navbar-toggler {
+            --bs-navbar-toggler-padding-x: 1.25rem;
+            --bs-navbar-toggler-padding-y: .5rem;
+            --bs-navbar-toggler-font-size: .975rem;
+            --bs-border-width: 0;
+            --bs-navbar-toggler-focus-width: 0;
+            background-color: var(--bs-navbar-toggler-bg);
+        }
+
+        .navbar .footer-text {
+            color: var(--cnvs-navbar-link);
+        }
+
+        /* After Open */
+        .navbar-collapse-open .navbar {
+            --cnvs-navbar-width: 20rem;
+            --cnvs-navbar-bg: var(--bs-dark);
+            --cnvs-navbar-link: var(--bs-light);
+            --cnvs-navbar-linecolor: var(--bs-gray-800);
+            --bs-navbar-color: var(--cnvs-contrast-1000);
+            --bs-navbar-toggler-bg: var(--cnvs-contrast-0);
+        }
+
+        .navbar-collapse-open .navbar-nav {
+            --bs-nav-link-hover-color: var(--cnvs-contrast-400);
+        }
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<nav class="navbar border border-default">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4" href="#">Canvas</a>
+                <button class="navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <div class="line my-2"></div>
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-house"></i>Home</div></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-person-circle"></i>About</div></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-pc-display"></i>Work</div></a>
+                            <ul>
+                                <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-droplet"></i>Project One</div></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-easel2"></i>Project Two</div></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-file-medical-fill"></i>Project Three</div></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-microsoft-teams"></i>Team</div></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-database"></i>Services</div></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-currency-dollar"></i>Pricing</div></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-pencil-fill"></i>Blog</div></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-chat-quote-fill"></i>Testimonials</div></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><div><i class="me-2 bi-person-lines-fill"></i>Contact</div></a></li>
+                    </ul>
+                    <div class="line mt-3 mb-2"></div>
+                    <small class="footer-text op-04">2023© All rights reserved.</small>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="d-flex justify-content-center align-items-center w-100 min-vh-100">Expand Menu</h1>
+
+	</div><!-- #wrapper end -->
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+    <script>
+        jQuery('#navbarScroll').on('show.bs.collapse', function () {
+            jQuery('body').addClass('navbar-collapse-open');
+        });
+        jQuery('#navbarScroll').on('hide.bs.collapse', function () {
+            jQuery('body').removeClass('navbar-collapse-open');
+        });
+    </script>
+
+</body>
+
+<!-- Mirrored from canvastemplate.com/block-navigation-expand.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 11:27:29 GMT -->
+</html>

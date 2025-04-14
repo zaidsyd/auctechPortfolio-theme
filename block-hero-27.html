@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from canvastemplate.com/block-hero-27.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 11:25:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Hero | Canvas</title>
+
+	<style>
+
+		.block-hero-27 h1,
+		.block-hero-27 h2,
+		.block-hero-27 h3,
+		.block-hero-27 h4,
+		.block-hero-27 h5,
+		.block-hero-27 h6,
+		.block-hero-27 p,
+		.block-hero-27 a,
+		.block-hero-27 button {
+			font-family: 'Inter', sans-serif;
+		}
+
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap py-lg-0">
+
+				<div class="container">
+
+					<!-- Section light
+					============================================= -->
+					<div class="block-hero-27">
+
+						<div class="row align-items-center min-vh-lg-100 gutter-50">
+
+							<div class="col-lg-6">
+								<canvas id="chart-0"></canvas>
+							</div>
+
+							<div class="col-lg-6">
+								<h4 class="fw-bold text-uppercase ls-2 lh-base mb-3">Interactively restore valuex.</h4>
+								<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem, unde molestias, tenetur fuga odio in dicta aspernatur sit cupiditate pariatur, aliquid, illo voluptatibus qui consequatur saepe numquam aperiam atque.</p>
+
+								<div class="clear"></div>
+
+								<div class="row mt-2">
+									<div class="col-sm-6">
+										<div class="d-flex align-items-center">
+											<div class="counter counter-xlarge text-dark fw-bolder"><span data-from="1" data-to="15" data-refresh-interval="10" data-speed="1600"></span></div>
+											<span class="ms-2">+ Years Of<br>Experience.</span><br>
+										</div>
+										<p class="lh-base">Conveniently engineer top-line web services whereas virtual metrics.</p>
+									</div>
+
+									<div class="col-sm-6">
+										<div class="d-flex align-items-center">
+											<div class="counter counter-xlarge text-dark fw-bolder"><span data-from="4" data-to="83" data-refresh-interval="50" data-speed="1500"></span></div>
+											<span class="ms-2">% of Works <br>Completed.</span>
+										</div>
+										<p class="lh-base">Proactively productivate collaborative infomediaries rather  e-services.</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section><!-- #content end -->
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+	<script src="js/chart.js"></script>
+	<script src="js/chart-utils.js"></script>
+
+	<script>
+ 		chartColors['first_dataset_color'] = '#FF6666';
+
+		var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+		window.onload = function() {
+			var ctx = document.getElementById("chart-0").getContext("2d");
+
+			var gradientStroke1 = ctx.createLinearGradient(500, 0, 100, 0);
+			gradientStroke1.addColorStop(0, "#FF6666");
+			gradientStroke1.addColorStop(1, "#FFFF66");
+
+			var gradientStroke2 = ctx.createLinearGradient(500, 0, 100, 0);
+			gradientStroke2.addColorStop(0, "#1D7Baa");
+			gradientStroke2.addColorStop(1, "#e848E6");
+
+			var config = {
+				type: 'line',
+				data: {
+					labels: ["January", "February", "March", "April", "May", "June", "July"],
+					datasets: [{
+						label: "My First dataset",
+						backgroundColor: gradientStroke1,
+						borderColor: gradientStroke1,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						],
+						fill: false,
+					}, {
+						label: "My Second dataset",
+						fill: false,
+						backgroundColor: gradientStroke2,
+						borderColor: gradientStroke2,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						],
+					}]
+				},
+				options: {
+					legend: {
+						display:false,
+			            position: "bottom"
+			        },
+					responsive: true,
+					title:{
+						display:false,
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: false,
+					},
+					hover: {
+						mode: 'nearest',
+						intersect: true
+					},
+					scales: {
+						xAxes: [{
+							display: true,
+							scaleLabel: {
+								display: false,
+								labelString: 'Month'
+							}
+						}],
+						yAxes: [{
+							display: true,
+							scaleLabel: {
+								display: false,
+								labelString: 'Value'
+							}
+						}]
+					}
+				}
+			};
+			window.myLine = new Chart(ctx, config);
+		};
+	</script>
+
+</body>
+
+<!-- Mirrored from canvastemplate.com/block-hero-27.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 11:25:38 GMT -->
+</html>
