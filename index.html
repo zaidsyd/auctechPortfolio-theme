@@ -17,7 +17,7 @@
 <style>
 
 
-/* ------------------ */
+/* Abhishek ki CSS------------------ */
 
 .grid-filter {
     position: relative;
@@ -34,7 +34,116 @@
 
 
 
-/* =========== */
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .container-form {
+        background-image: url('images/portfolio/2/3.jpg'); 
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 42px;
+
+      position: relative;
+
+      z-index: 2;
+      /* max-width: 1100px; */
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+
+    .left-text {
+      /* color: rgb(26 115 232); */
+      max-width: 715px;
+      font-size: 4.375rem;
+      font-weight: bold;
+      flex: 1 1 300px;
+      /* padding: 20px; */
+    }
+
+    .form-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      max-width: 400px;
+      width: 100%;
+      flex: 1 1 300px;
+    }
+
+    .form-box h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .submit-btn {
+      background-color: #1a73e8;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #1a73e8;
+    }
+
+    @media (max-width: 768px) {
+      .container-form {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .left-text {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+
+
+/* CSS abhi End=========== */
+
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     :root {
         --cnvs-primary-font:  "Work Sans", sans-serif;
@@ -618,6 +727,34 @@
                     </div>
         
                 </section>
+
+                
+  
+  <div class="container-form">
+   
+    <div class="left-text">
+      Get In Touch <br> With Us
+    </div>
+
+    <div class="form-box">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Full Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="Phone Number" required />
+          </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
                 
                 
                 <div id="section-niche" class="section page-section bg-transparent mb-0 mt-4">
@@ -3705,6 +3842,53 @@
                 </div>
             </div>
         </section>
+        <div class="section row p-0 align-items-stretch dark mt-4">
+            <div class="col-lg-5" style="background: url('demos/medical/images/section-bg.jpg') center center no-repeat; background-size: cover; min-height: 250px;">
+                <div>&nbsp;</div>
+            </div>
+            <div id="booking-appointment-form" class="col-lg-7 p-0">
+                <div class="bg-color form-widget col-padding" data-loader="button">
+                    <h2>Get In Touch With Us</h2>
+                    <div class="form-result"></div>
+                    <form class="row mb-0" id="template-medical-form" name="template-medical-form" action="https://canvastemplate.com/include/form.php" method="post">
+                        <div class="form-process">
+                            <div class="css3-spinner">
+                                <div class="css3-spinner-scaler"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 form-group">
+                            <label for="template-medical-name">Full Name:</label>
+                            <input type="text" id="template-medical-name" name="template-medical-name" class="form-control not-dark required" value="">
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="template-medical-phone">Phone:</label>
+                            <input type="text" id="template-medical-phone" name="template-medical-phone" class="form-control not-dark required" value="">
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-md-8 form-group">
+                            <label for="template-medical-email">Email Address:</label>
+                            <input type="email" id="template-medical-email" name="template-medical-email" class="form-control not-dark required" value="">
+                        </div>
+                        
+                        
+                        
+                        <div class="col-md-7 form-group">
+                            <label for="template-medical-message">Message:</label>
+                            <textarea id="template-medical-message" name="template-medical-message" class="form-control not-dark required" cols="30" rows="5"></textarea>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-12 form-group d-none">
+                            <input type="text" name="template-medical-botcheck" value="">
+                        </div>
+                        <div class="col-12 form-group text-end">
+                            <button class="button button-white button-light button-rounded m-0" type="submit" value="submit">Submit</button>
+                        </div>
+                        <input type="hidden" name="prefix" value="template-medical-">
+                    </form>
+
+                </div>
+            </div>
+        </div>
         <footer id="footer" class="dark">
             <div id="copyrights">
                 <div class="container text-center">
