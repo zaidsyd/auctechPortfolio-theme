@@ -47,7 +47,7 @@
     }
 
     .container-form {
-      background-image: url('images/portfolio/2/3.jpg'); 
+      background-image: url('images/collage-contact3.jpg'); 
       background-size: cover;
       background-position: center;
       min-height: 100vh;
@@ -69,7 +69,10 @@
       flex-wrap: wrap;
     }
     
-
+  .form-box-logo{
+    text-align: center;
+    margin-bottom: 20px;
+  }
     .left-text {
       color: #fff;
       max-width: 888px;
@@ -89,9 +92,14 @@
       padding: 30px;
       border-radius: 32px;
       box-shadow: 0 0 20px rgba(0,0,0,0.3);
-      max-width: 400px;
+      max-width: 450px;
       width: 100%;
       flex: 1 1 300px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     }
 
     .form-box h2 {
@@ -108,11 +116,11 @@
 
     .form-group input,
     .form-group textarea {
-      width: 100%;
+      width: 300px;
       padding: 12px;
       border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
+      border-radius: 13px;
+      font-size: 0.88rem;
     }
 
     .form-group textarea {
@@ -126,19 +134,21 @@
       padding: 12px;
       border: none;
       width: 100%;
-      border-radius: 6px;
+      border-radius: 25px;
       font-size: 1rem;
       font-weight: bold;
       cursor: pointer;
-      transition: background 0.3s ease;
+    
     }
 
-    .submit-btn:hover {
-      background-color: #1a73e8;
-    }
+    
 
     @media (max-width: 768px) {
-      .container-form {
+        .form-group input, .form-group textarea{
+            width: 100%;
+        }
+      
+        .container-form {
         flex-direction: column;
         align-items: stretch;
       }
@@ -742,6 +752,7 @@
                     </div>
                     
                     <div class="form-box">
+                        <img class="form-box-logo" style="height: 70px;" src="https://www.auctech.in/assets/img/logo-footer.png" alt="" srcset="">
                         <h2>Contact Us</h2>
                         <form>
                             <div class="form-group">
