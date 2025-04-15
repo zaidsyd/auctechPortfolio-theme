@@ -1,8 +1,8 @@
 <?php
     $servername = "localhost";
-    $username = "u622085619_auct_portfoUz";
-    $password = "Auctech@123";
-    $database = "u622085619_auct_portfoDb";
+    $username = "root";
+    $password = "";
+    $database = "auctech-portfolio_db";
 
     $con =  new mysqli($servername, $username, $password, $database);
 
