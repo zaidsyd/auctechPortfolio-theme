@@ -43,10 +43,11 @@
       width: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 1;
+      pointer-events: none;
     }
 
     .container-form {
-        background-image: url('images/portfolio/2/3.jpg'); 
+      background-image: url('images/portfolio/2/3.jpg'); 
       background-size: cover;
       background-position: center;
       min-height: 100vh;
@@ -70,18 +71,23 @@
     
 
     .left-text {
-      /* color: rgb(26 115 232); */
-      max-width: 715px;
+      color: #fff;
+      max-width: 888px;
       font-size: 4.375rem;
       font-weight: bold;
       flex: 1 1 300px;
+      position: relative;
+      z-index: 2;
       /* padding: 20px; */
     }
 
     .form-box {
+      position: relative;
+      z-index: 2;
+      
       background-color: #fff;
       padding: 30px;
-      border-radius: 10px;
+      border-radius: 32px;
       box-shadow: 0 0 20px rgba(0,0,0,0.3);
       max-width: 400px;
       width: 100%;
@@ -89,6 +95,8 @@
     }
 
     .form-box h2 {
+      position: relative;
+      z-index: 2;
       margin-bottom: 20px;
       text-align: center;
       color: #333;
@@ -727,34 +735,31 @@
                     </div>
         
                 </section>
-
-                
-  
-  <div class="container-form">
-   
-    <div class="left-text">
-      Get In Touch <br> With Us
-    </div>
-
-    <div class="form-box">
-      <h2>Contact Us</h2>
-      <form>
-        <div class="form-group">
-          <input type="text" placeholder="Full Name" required />
-        </div>
-        <div class="form-group">
-          <input type="email" placeholder="Your Email" required />
-        </div>
-        <div class="form-group">
-            <input type="number" placeholder="Phone Number" required />
-          </div>
-        <div class="form-group">
-          <textarea placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
-    </div>
-  </div>
+                <div class="container-form">
+                    <div class="overlay"></div>
+                    <!-- <img src="./images/portfolio/2/3.jpg" alt="" srcset=""> -->
+                    <div class="left-text">Get In Touch <br> With Us
+                    </div>
+                    
+                    <div class="form-box">
+                        <h2>Contact Us</h2>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Full Name" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="Phone Number" required />
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
                 
                 
                 <div id="section-niche" class="section page-section bg-transparent mb-0 mt-4">
