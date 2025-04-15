@@ -351,3 +351,27 @@ body:not(.is-expanded-menu) #header {
         width: 20%
     }
 }
+
+
+
+/* --RATNA CSS --*/
+
+.masonry-thumbs>*>img {
+    display: block;
+    width: 310px !important;
+    height: 300px;
+    border-radius: 30px !important;
+    padding: 10px;
+}
+
+.heading-block {
+    margin-top: 70px;
+}
+
+p {
+    text-align: justify;
+}
+
+.pe-0 {
+    padding-right: 1 !important;
+}
