@@ -1,365 +1,6 @@
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <meta http-equiv="x-ua-compatible" content="IE=edge">
-        <meta name="author" content="Auctech Portfolio">
-        <meta name="description" content="Auctech Portfolio">
-        <link rel="preconnect" href="https://fonts.googleapis.com/">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/font-icons.css">
-        <link rel="stylesheet" href="css/swiper.css">
-        <link rel="stylesheet" href="css/custom.css">
-        <link rel="stylesheet" href="zaid.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Auctech Portfolio</title>
-    </head>
-
-<body class="stretched is-expanded-menu" data-loader-color="theme" data-loader-timeout="5000"  data-menu-breakpoint="1200">
-    <div id="wrapper">
-
-        <header id="header" class="transparent-header">
-            <div id="header-wrap">
-                <div class="container-fluid px-4 px-xl-5">
-                    <div class="header-row">
-                        <div id="logo" class="me-xl-0"><a href="index.html" class="w-auto">
-                                <img class="logo-default" style="height: 70px;"
-                                    src="https://www.auctech.in/assets/img/logo-footer.png" alt="Canvas Logo">
-                                <img class="logo-dark" src="https://www.auctech.in/assets/img/logo-footer.png"
-                                    alt="Canvas Logo"></a>
-                        </div>
-                        <div class="primary-menu-trigger"><button class="cnvs-hamburger" type="button"
-                                title="Open Mobile Menu"><span class="cnvs-hamburger-box"><span
-                                        class="cnvs-hamburger-inner"></span></span></button></div>
-                        <nav class="primary-menu mobile-menu-off-canvas ms-auto me-auto">
-                            <ul class="menu-container">
-                                <li class="menu-item">
-                                    <a class="menu-link" href="index.html#niche-demos">
-                                        <div>Home</div>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="menu-link" href="index.html#niche-demos">
-                                        <div>About Us</div>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="menu-link" href="index.html#niche-demos">
-                                        <div>Our Creations</div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <a href="#"
-                            class="button button-3d button-text-effect button-text-flip-y mx-3 me-xl-0 d-none d-sm-inline-block">Contact
-                            Us</a>
-                    </div>
-                </div>
-            </div>
-            <div class="header-wrap-clone"></div>
-        </header>
-       
-
-        <div class="scroll-container">
-            <div class="sections">
-                <section id="slider" class="section section-1 slider-element min-vh-75 h-auto scroll-detect include-header bg-contrast-100">
-                    <div class="py-6 mt-xl-6 position-relative z-2">
-                        <div class="container">
-                            <div class="justify-content-center row align-items-center col-mb-80 mb-0">
-                                <div class="text-center col-12 pt-4 pb-0">
-                                    <style>
-                                        .has-plugin-textrotator .textrotator-placeholder {
-                                            display: none
-                                        }
-                                    </style>
-                                    <h1 class="mb-4 display-4 mx-auto nott" style="max-width:900px"><span
-                                            class="nocolor d-block font-secondary fs-4 mb-3">Provide Best Business Solutions
-                                        </span>
-                                        <span class="nocolor fw-bold text-rotater ls-1" data-backdelay="1800" data-loop="true"
-                                            data-rotate="fadeIn" data-separator="|" data-shuffle="true" data-speed="60"
-                                            data-typed="true"><span class="text-uppercase t-rotate">
-                                                Marketing|Communication|Web Development|SEO|Graphic Design|CRM Software|Content
-                                                Creation|Email Marketing|Social Media Management|Digital Strategy|UI/UX
-                                                Design|Software Development|Branding|Logo Design|Business Consulting|E-commerce
-                                                Solutions|Lead Generation|Video Editing|Mobile App Development|Cloud
-                                                Solutions|Web App Development|Campaign Management|Reputation Management|Landing
-                                                Pages|Custom Software|UI Development|Online Advertising|Brochure Design|Startup
-                                                Solutions|Innovation Strategy|Creative Direction|Influencer Marketing|Digital
-                                                Branding
-                                            </span>
-                                        </span><span class="nocolor fw-bold text-rotater text-uppercase textrotator-placeholder"
-                                            title="Auctech MarCom">Auctech MarCom</span>
-                                    </h1>
-                                </div>
-                                <div class="text-center col-lg-7 pb-3">
-                                    <p class="mb-5 fs-4 lead">Your trusted partner for next-gen web solutions, branding, and
-                                        strategy.
-                                        <span class="fw-semibold color counter counter-inherit"> <span data-speed="1000"
-                                                data-from="99" data-refresh-interval="50" data-to="25"></span>+</span> Years of
-                                        Experience &
-                                        <span class="fw-semibold color counter counter-inherit"><span data-speed="1000"
-                                                data-from="99" data-refresh-interval="50" data-to="2000"></span>+</span>
-                                        Projects.
-                                    </p>
-                                    <div class="align-items-center justify-content-center row g-4 mx-auto mb-5"
-                                        style="max-width:600px">
-                                        <div class="col-sm-6 col-lg-5"><a
-                                                class="w-100 button button-large m-0 rounded shadow-sm" data-scrollto="#"
-                                                section-alldemoshref="#" style="padding:.75rem 2rem" target="_blank"
-                                                href="https://www.auctech.in/portfolio/"><i class="uil uil-images"
-                                                    style="position:relative;top:1px;margin-right:5px"></i> View Projects</a>
-                                        </div>
-                                        <!-- Request a Demo Button -->
-                                        <div class="col-sm-6 col-lg-5">
-                                            <a class="w-100 button button-large m-0 rounded bg-contrast-900 h-bg-color text-white"
-                                                data-bs-toggle="modal" data-bs-target="#demoModal"
-                                                style="padding:.75rem 2rem; cursor: pointer;">
-                                                <i class="bi bi-telephone-forward me-2"></i> Request a demo
-                                            </a>
-                                        </div>
-        
-                                        <!-- Bootstrap Modal -->
-                                        <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel"
-                                            aria-hidden="true" style="z-index: 99999999;">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content rounded-4">
-                                                    <div class="modal-header bg-dark text-white">
-                                                        <h5 class="modal-title" id="demoModalLabel">Request a Demo</h5>
-                                                        <button type="button" class="btn-close btn-close-white"
-                                                            data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form id="demoForm">
-                                                            <div class="mb-3">
-                                                                <label for="fullName" class="form-label">Full Name</label>
-                                                                <input type="text" class="form-control" id="fullName"
-                                                                    placeholder="Enter your full name" required>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="mobile" class="form-label">Mobile</label>
-                                                                <input type="tel" class="form-control" id="mobile"
-                                                                    placeholder="Enter your mobile number" required>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="emailAddress" class="form-label">Email</label>
-                                                                <input type="email" class="form-control" id="emailAddress"
-                                                                    placeholder="Enter your email" required>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="message" class="form-label">Message</label>
-                                                                <textarea class="form-control" id="message" rows="3"
-                                                                    placeholder="Your message..." required></textarea>
-                                                            </div>
-                                                            <button type="submit" class="btn btn-primary w-100">Submit
-                                                                Request</button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-        
-                                        <div class="col-sm-auto d-none d-lg-block"><a
-                                                class="align-items-center all-ts d-flex text-white justify-content-center rounded-circle square h-op-08"
-                                                style="background:url(images/intro/new/video-button.jpg) center center / cover;--cnvs-square-size:3rem"
-                                                data-lightbox="iframe" href="https://www.youtube.com/watch?v=7tKlO0hprYw"><i
-                                                    class="fa-solid fa-play fs-6 m-0 position-relative"
-                                                    style="left:1px"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center col-md-10 col-xl-9" style="font-size: .875rem">
-                                    <span class="d-inline-block mb-3 me-3" data-animate="fadeInUpSmall" data-delay="333">
-                                        <i class="position-relative fa-solid me-1 fa-check text-success" style="top: 1px;"></i>
-                                        Best Real Estate CRM Solution
-                                    </span>
-        
-                                    <span class="d-inline-block mb-3 me-3" data-animate="fadeInUpSmall" data-delay="444">
-                                        <i class="position-relative fa-solid me-1 fa-check text-success" style="top: 1px;"></i>
-                                        10+ Android/iOS Apps Hosted
-                                    </span>
-        
-                                    <span class="d-inline-block mb-3 me-3" data-animate="fadeInUpSmall" data-delay="555">
-                                        <i class="position-relative fa-solid me-1 fa-star text-warning"></i>
-                                        1500+ Websites Developed
-                                    </span>
-        
-                                    <span class="d-inline-block mb-3 me-3" data-animate="fadeInUpSmall" data-delay="666">
-                                        <i class="position-relative fa-solid me-1 fa-check text-success" style="top: 1px;"></i>
-                                        8+ Global Presence
-                                    </span>
-        
-                                    <span class="d-inline-block mb-3" data-animate="fadeInUpSmall" data-delay="777">
-                                        <i class="position-relative fa-solid me-1 fa-check text-success" style="top: 1px;"></i>
-                                        1 Year Free Support
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-100 h-100 position-absolute py-5 start-0 top-0 z-1">
-                        <div class="w-100 d-flex mt-6 pt-5 px-4">
-                            <div class="position-relative intro-hero-images-section w-50">
-                                <div class="position-relative d-flex" data-animate="fadeInDownSmall" style="width:35%;left:1%;">
-                                    <img alt="Classic Demo" class="lazy rounded shadow w-50"
-                                        data-src="images/intro/niche/new/classic.jpg" height="159"
-                                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                        style="transform:translate3d(0,calc(var(--cnvs-scroll-end)*100%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                    <div class="position-absolute" data-animate="fadeInRightSmall"
-                                        style="width:65%;right:-14.5%;top:-50%;" data-delay="550">
-                                        <img alt="Construction Demo" class="lazy rounded shadow w-100 ms-4"
-                                            data-src="images/intro/niche/new/construction.jpg" height="159"
-                                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                            style="transform:translate3d(0,calc(var(--cnvs-scroll-end)*100%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                    </div>
-                                </div>
-                    
-                                <div class="position-relative mt-4" data-animate="fadeInLeft" style="width:37%;left:-18%;" data-delay="250">
-                                    <img alt="Real Estate Demo" class="lazy rounded shadow w-100"
-                                        data-src="images/intro/niche/new/real-estate.jpg" height="159"
-                                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                        style="transform:translate3d(0,calc(var(--cnvs-scroll-end)*100%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                    <div class="position-absolute" data-animate="zoomIn" style="width:50%;right:-57%;top:-9%;" data-delay="800">
-                                        <img alt="App Landing Demo" class="lazy rounded shadow w-100"
-                                            data-src="images/intro/niche/new/app-landing.jpg" height="159"
-                                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                            style="transform:translate3d(calc(var(--cnvs-scroll-end)*30%),calc(var(--cnvs-scroll-end)*100%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                    </div>
-                                    <div class="position-absolute" data-animate="zoomIn" style="width:48%;right:-55%;top:51.5%;" data-delay="1000">
-                                        <img alt="News Demo" class="lazy rounded shadow w-100"
-                                            data-src="images/intro/niche/new/news.jpg" height="159"
-                                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                            style="transform:translate3d(calc(var(--cnvs-scroll-end)*50%),calc(var(--cnvs-scroll-end)*200%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                    </div>
-                                </div>
-                    
-                                <div class="position-relative mt-4" data-animate="fadeInUp" style="width:38%;left:3%;" data-delay="500">
-                                    <img alt="Supplements Demo" class="lazy rounded shadow w-100"
-                                        data-src="images/intro/niche/new/skincare.jpg" height="159"
-                                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                        style="transform:translate3d(0,calc(var(--cnvs-scroll-end)*100%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                </div>
-                            </div>
-                    
-                            <div class="position-relative d-flex align-items-end flex-column intro-hero-images-section w-50">
-                                <div class="position-relative d-flex" data-animate="fadeInDownSmall" style="width:35%;right:1%;">
-                                    <img alt="Conference Demo" class="lazy rounded shadow ms-auto w-50"
-                                        data-src="images/intro/niche/new/conference.jpg" height="159"
-                                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                        style="transform:translate3d(0,calc(var(--cnvs-scroll-end)*100%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                    <div class="position-absolute" data-animate="fadeInLeftSmall" style="width:65%;left:-30%;top:-50%;" data-delay="550">
-                                        <img alt="Freelancer Demo" class="lazy rounded shadow w-100 ms-4"
-                                            data-src="images/intro/niche/new/freelancer.jpg" height="159"
-                                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                            style="transform:translate3d(0,calc(var(--cnvs-scroll-end)*100%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                    </div>
-                                </div>
-                    
-                                <div class="position-relative mt-4" data-animate="fadeInRightSmall" style="width:37%;right:-18%;" data-delay="250">
-                                    <img alt="CoWorking Demo" class="lazy rounded shadow w-100 ms-auto"
-                                        data-src="images/intro/niche/new/coworking.jpg" height="159"
-                                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                        style="transform:translate3d(0,calc(var(--cnvs-scroll-end)*100%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                    <div class="position-absolute" data-animate="zoomIn" style="width:50%;left:-57%;top:-9%;" data-delay="800">
-                                        <img alt="Furniture Demo" class="lazy rounded w-100"
-                                            data-src="images/intro/niche/new/furniture.jpg" height="159"
-                                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                            style="transform:translate3d(calc(-1*var(--cnvs-scroll-end)*30%),calc(var(--cnvs-scroll-end)*100%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                    </div>
-                                    <div class="position-absolute" data-animate="zoomIn" style="width:48%;left:-55%;top:51.5%;" data-delay="1000">
-                                        <img alt="Skincare Demo" class="lazy rounded shadow w-100"
-                                            data-src="images/intro/niche/new/skincare.jpg" height="159"
-                                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                            style="transform:translate3d(calc(-1*var(--cnvs-scroll-end)*50%),calc(var(--cnvs-scroll-end)*200%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                    </div>
-                                </div>
-                    
-                                <div class="position-relative mt-4" data-animate="fadeInUp" style="width:38%;right:3%;" data-delay="500">
-                                    <img alt="SEO Demo" class="lazy rounded shadow w-100"
-                                        data-src="images/intro/niche/new/seo.jpg" height="159"
-                                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 221 159'%3E%3C/svg%3E"
-                                        style="transform:translate3d(0,calc(var(--cnvs-scroll-end)*100%),0);opacity:calc(var(--cnvs-scroll-ratio)*1); width:221px;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </section>
-              <div class="section section-2">Section 2 - About</div>
-              <div class="section section-3">Section 3 - Services</div>
-              <div class="section section-4">Section 4 - Contact</div>
-            </div>
-        </div>
-
-
-        <footer id="footer" class="dark">
-            <div id="copyrights">
-                <div class="container text-center">
-                    <p class="mb-1">Copyrights &copy; 2025 All Rights Reserved by <a href="# "
-                            class="text-warning">Auctech MarCom</a></p>
-
-                </div>
-            </div>
-        </footer>
-    </div>
-    <div id="gotoTop" class="uil uil-angle-up rounded" data-mobile="true"
-        style="--cnvs-gotoTop-bg:var(--cnvs-contrast-800)"></div>
-    <script src="js/plugins.min.js"></script>
-    <script src="js/functions.bundle.js"></script>
-    <script>
-        const container = document.querySelector(".sections");
-        const totalSections = document.querySelectorAll(".section").length;
-        let currentSection = 0;
-        let isScrolling = false;
-    
-        function scrollToSection(index) {
-          container.style.transform = `translateY(-${index * 100}vh)`;
-          isScrolling = true;
-          setTimeout(() => {
-            isScrolling = false;
-          }, 800); // time to match the CSS transition
-        }
-    
-        window.addEventListener("wheel", (e) => {
-          if (isScrolling) return;
-    
-          if (e.deltaY > 0 && currentSection < totalSections - 1) {
-            currentSection++;
-            scrollToSection(currentSection);
-          } else if (e.deltaY < 0 && currentSection > 0) {
-            currentSection--;
-            scrollToSection(currentSection);
-          }
-        });
-    
-        // Optional: Touch support for mobile
-        let touchStartY = 0;
-        window.addEventListener("touchstart", (e) => {
-          touchStartY = e.touches[0].clientY;
-        });
-    
-        window.addEventListener("touchend", (e) => {
-          let touchEndY = e.changedTouches[0].clientY;
-          let delta = touchStartY - touchEndY;
-    
-          if (Math.abs(delta) > 50 && !isScrolling) {
-            if (delta > 0 && currentSection < totalSections - 1) {
-              currentSection++;
-            } else if (delta < 0 && currentSection > 0) {
-              currentSection--;
-            }
-            scrollToSection(currentSection);
-          }
-        });
-      </script>
-</body>
-
-</html>
-
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta http-equiv="x-ua-compatible" content="IE=edge">
 <meta name="author" content="Auctech Portfolio">
@@ -692,19 +333,14 @@
         width: 310px !important;
         height: 300px;
         border-radius: 30px !important;
-        padding: 10px;
+        padding:10px;
     }
 
     .heading-block {
         margin-top: 70px;
     }
-
-    p {
+    p{
         text-align: justify;
-    }
-
-    .pe-0 {
-        padding-right: 1 !important;
     }
 </style>
 
@@ -983,26 +619,31 @@
                             style="width: 1905px;">
                             <div class="container">
                                 <div class="row align-items-center mt-5">
-                                    <div class="col-xl-6 pe-0 pe-xl-5 col-md-5 col-sm-11 col-12 mb-5 mb-lg-0">
+                                    <div class="col-xl-6 pe-0 pe-xl-5 col-md-6 col-sm-11 col-12 mb-5 mb-lg-0">
                                         <div class="heading-block border-bottom-0 mb-4">
-                                            <h2 class="fw-bold ls-0 text-transform-none">Choosing the Right Platform for
-                                                Your E-commerce Startup</h2>
+                                            <div class="before-heading mb-2">16 March 2021 <span
+                                                    class="badge bg-secondary ms-1">Featured</span></div>
+                                            <h2 class="fw-bold ls-0 text-transform-none">The Darkness of the Flame</h2>
                                         </div>
-                                        <p>When starting an e-commerce business, one of the most important decisions
-                                            you'll make is choosing the right platform to build your online store. The
-                                            platform you choose will affect how your website looks, works, performs, and
-                                            grows in the future.</p>
-
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa harum
+                                            obcaecati, et quo facilis itaque minima tempore voluptates suscipit.</p>
+                                        <div
+                                            class="article-info mb-4 d-flex align-items-center justify-content-between">
+                                            <div class="rating-stars ms-1"><i class="bi-star-fill"></i><i
+                                                    class="bi-star-fill"></i><i class="bi-star-fill"></i><i
+                                                    class="bi-star-fill"></i><i class="bi-star-fill"></i></div>
+                                            <h5>by: <a href="#">Hans Down</a></h5>
+                                            <span class="article-price fw-bold ms-1"><del>$60.00</del> $49.99</span>
+                                        </div>
                                         <a href="#" class="button button-large text-transform-none ms-0"><i
-                                                class="bi-cart"></i> Explore More</a>
+                                                class="bi-cart"></i> Add to Cart</a>
                                     </div>
-                                    <div class="col-xl-2 col-md-3 col-4 parallax" data-0="transform: translateY(0px);"
+                                    <div class="col-xl-3 col-md-3 col-6 parallax" data-0="transform: translateY(0px);"
                                         data-600="transform: translateY(-30px);">
-                                        <img src="https://canvastemplate.com/demos/articles/images/articles/1/1.png"
-                                            alt="Image" class="rounded faster fadeInLeft animated"
-                                            data-animate="fadeInLeft">
-                                        <div class="card mt-3 d-none d-sm-block faster fadeInLeft animated"
-                                            data-animate="fadeInLeft" data-delay="100">
+                                        <img src="demos/articles/images/articles/2/1.png" alt="Image"
+                                            class="rounded not-animated" data-animate="faster fadeInLeft">
+                                        <div class="card mt-3 not-animated" data-animate="faster fadeInLeft"
+                                            data-delay="100">
                                             <div class="card-body rounded bg-color dark" data-bs-theme="dark">
                                                 <h4 class="mb-2 font-body">Demo Heading</h4>
                                                 <p class="mb-0">Sunt, laborum, nemo. Aperiam. Lorem ipsum dolor sit
@@ -1010,23 +651,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-2 col-md-2 col-4 p-0 parallax" data-0="transform: translateY(0);"
-                                        data-600="transform: translateY(20px);">
-                                        <img src="https://canvastemplate.com/demos/articles/images/articles/1/4.png"
-                                            alt="Image" class="faster rounded fadeInLeft animated"
-                                            data-animate="fadeInLeft" data-delay="200">
-                                        <img src="https://canvastemplate.com/demos/articles/images/articles/1/2.png"
-                                            alt="Image" class="faster rounded mt-3 fadeInLeft animated"
-                                            data-animate="fadeInLeft" data-delay="300">
-                                    </div>
-                                    <div class="col-xl-2 col-md-2 col-4 parallax" data-0="transform: translateY(0px);"
-                                        data-600="transform: translateY(-20px);">
-                                        <img src="https://canvastemplate.com/demos/articles/images/articles/1/3.png"
-                                            alt="Image" class="faster rounded fadeInLeft animated"
-                                            data-animate="fadeInLeft" data-delay="400">
-                                        <img src="https://canvastemplate.com/demos/articles/images/articles/1/5.png"
-                                            alt="Image" class="faster rounded mt-3 fadeInLeft animated"
-                                            data-animate="fadeInLeft" data-delay="500">
+                                    <div class="col-xl-3 col-md-3 col-6 p-0 parallax" data-0="transform: translateY(0);"
+                                        data-600="transform: translateY(40px);">
+                                        <img src="demos/articles/images/articles/2/2.png" alt="Image"
+                                            class="rounded not-animated" data-animate="faster fadeInLeft"
+                                            data-delay="200">
                                     </div>
                                 </div>
                             </div>
@@ -1199,7 +828,7 @@
                         </div>
                     </div>
                 </div>
-               
+             
                 <div class="my-3 py-6 section" id=section-homepage>
                     <div class="container-fluid px-5">
                         <div class="text-center text-center border-bottom-0 heading-block">
@@ -3454,7 +3083,7 @@
                     <div class="container">
                         <h2 class="display-4 fw-semibold font-secondary lh-base mb-5">Create Beautiful & Powerful
                             Websites<br>Get Canvas for <strong>$16</strong> only!</h2><a
-                    /1.envato.market/c/1309643/480739/4415?u=https%3A%2F%2Fthemeforest.net%2Fcart%2Fconfigure_before_adding%2F9228123"
+                            href="https://1.envato.market/c/1309643/480739/4415?u=https%3A%2F%2Fthemeforest.net%2Fcart%2Fconfigure_before_adding%2F9228123"
                             class="button button-circle button-xlarge button-reveal text-end ls-0 m-0"
                             style="padding-left: 60px;padding-right: 60px;"><span>Purchase License</span><i
                                 class="bi-chevron-right"></i></a>
@@ -3478,6 +3107,43 @@
         style="--cnvs-gotoTop-bg:var(--cnvs-contrast-800)"></div>
     <script src="js/plugins.min.js"></script>
     <script src="js/functions.bundle.js"></script>
+    <script>
+        let page = 1;
+        let loading = false;
+        let noMoreData = false;
+
+        function loadMoreProjects() {
+            if (loading || noMoreData) return;
+            loading = true;
+            $('#loader').show();
+
+            $.ajax({
+                url: 'fetch_projects.php',
+                type: 'GET',
+                data: { page: page },
+                success: function (data) {
+                    if ($.trim(data) === '') {
+                        noMoreData = true;
+                    } else {
+                        $('#niche-demos-grid').append(data);
+                        page++;
+                    }
+                },
+                complete: function () {
+                    $('#loader').hide();
+                    loading = false;
+                }
+            });
+        }
+
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() + $(window).height() >= $(document).height() - 200) {
+                loadMoreProjects();
+            }
+        });
+    </script>
+
+
 
 </body>
 
