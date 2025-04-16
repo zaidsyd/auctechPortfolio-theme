@@ -19,7 +19,31 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .bg-dark {
+            --bs-bg-opacity: 1;
+            background-color: #ffc107 !important;
+        }
 
+        .btn-close-white {
+            filter: var(--bs-btn-close-black-filter) !important;
+        }
+
+        .btn-primary {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #062450;
+            --bs-btn-border-color: #062450;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            color: var(--bs-btn-hover-color);
+            background-color:green;
+            border-color: green;
+        }
+    </style>
 </head>
 
 <body class="stretched is-expanded-menu" data-loader-color="theme" data-loader-timeout="5000"
@@ -59,7 +83,8 @@
                             </ul>
                         </nav>
                         <a href="https://www.auctech.in/contact.php"
-                            class="button button-3d button-text-effect button-text-flip-y mx-3 me-xl-0 d-none d-sm-inline-block" style="background-color: #000;">Contact
+                            class="button button-3d button-text-effect button-text-flip-y mx-3 me-xl-0 d-none d-sm-inline-block"
+                            style="background-color: #000;">Contact
                             Us</a>
                     </div>
                 </div>
@@ -78,7 +103,7 @@
                     </div>
                     <div class="modal-body">
                         <form id="demoForm">
-                            <div class="mb-3">
+                            <div class="mb-3 mt-3">
                                 <label for="fullName" class="form-label">Full
                                     Name</label>
                                 <input type="text" class="form-control" id="fullName" placeholder="Enter your full name"
@@ -99,8 +124,8 @@
                                 <textarea class="form-control" id="message" rows="3" placeholder="Your message..."
                                     required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Submit
-                                Request</button>
+                            <button type="submit" class="btn btn-primary w-100 mt-4">Submit
+                                </button>
                         </form>
                     </div>
                 </div>
@@ -120,11 +145,13 @@
                                     </span>
                                     <span class="nocolor fw-bold text-rotater ls-1" data-backdelay="1800"
                                         data-loop="true" data-rotate="fadeIn" data-separator="|" data-shuffle="true"
-                                        data-speed="60" data-typed="true"><span class="text-uppercase t-rotate text-warning">
+                                        data-speed="60" data-typed="true"><span
+                                            class="text-uppercase t-rotate text-warning">
                                             Marketing|Communication|Web Development|SEO|CRM Software|Social Media
                                             Management|UI/UX Design|Software Development|Branding|Logo Design|E-commerce
                                             Solutions|Lead Generation|Video Editing|Mobile App Development|Web App
-                                            Development|Campaign Management|Custom Software|UI Development|Online Advertising|Brochure Design|Creative Direction|Branding
+                                            Development|Campaign Management|Custom Software|UI Development|Online
+                                            Advertising|Brochure Design|Creative Direction|Branding
                                         </span>
                                     </span><span
                                         class="nocolor fw-bold text-rotater text-uppercase textrotator-placeholder"
@@ -315,14 +342,17 @@
                                     <div class="row align-items-center mt-5">
                                         <div class="col-xl-6 pe-0 pe-xl-5 col-md-5 col-sm-11 col-12 mb-5 mb-lg-0">
                                             <div class="heading-block border-bottom-0 mb-4">
-                                               
-                                                <h2 class="fw-bold ls-0 text-transform-none">Complete CRM Solutions for Real Estate, Clinics, Colleges & More</h2>
+
+                                                <h2 class="fw-bold ls-0 text-transform-none">Complete CRM Solutions for
+                                                    Real Estate, Clinics, Colleges & More</h2>
                                             </div>
-                                            <p>Auctech delivers fully customizable CRM solutions built for your unique business.
+                                            <p>Auctech delivers fully customizable CRM solutions built for your unique
+                                                business.
                                                 From lead management to operations, we cover it all in one smart system.
                                                 Scale faster, work smarter, and automate the boring stuff.</p>
 
-                                            <a href="https://auctech.in/portfolio" target="_blank" class="button button-large text-transform-none ms-0"
+                                            <a href="https://auctech.in/portfolio" target="_blank"
+                                                class="button button-large text-transform-none ms-0"
                                                 style="background-color: #000 !important;"><i
                                                     class="bi-arrow-right"></i> View More</a>
                                         </div>
@@ -371,7 +401,8 @@
 
                     <div class="heading-block mt-6 text-center">
                         <h2>Android & iOS App Development</h2>
-                        <span class="mx-auto">We build powerful, performance-driven mobile apps for both Android & iOS platforms — tailored for your business needs.</span>
+                        <span class="mx-auto">We build powerful, performance-driven mobile apps for both Android & iOS
+                            platforms — tailored for your business needs.</span>
                     </div>
 
                     <div class="row align-items-center col-mb-50 mb-4">
@@ -383,7 +414,8 @@
                                 </div>
                                 <div class="fbox-content">
                                     <h3>Play Store & App Store Hosting</h3>
-                                    <p>From app creation to final publishing, we manage everything and get your app live on both Play Store & App Store.</p>
+                                    <p>From app creation to final publishing, we manage everything and get your app live
+                                        on both Play Store & App Store.</p>
                                 </div>
                             </div>
 
@@ -394,7 +426,8 @@
                                 </div>
                                 <div class="fbox-content">
                                     <h3>Custom Features & UI/UX Design</h3>
-                                    <p>Intuitive designs with smart features to deliver the best user experience, built specifically for your audience.
+                                    <p>Intuitive designs with smart features to deliver the best user experience, built
+                                        specifically for your audience.
                                     </p>
                                 </div>
                             </div>
@@ -406,7 +439,8 @@
                                 </div>
                                 <div class="fbox-content">
                                     <h3>Secure & Scalable Architecture</h3>
-                                    <p>Apps built with robust security, scalable backend, and cloud integration to ensure long-term growth.</p>
+                                    <p>Apps built with robust security, scalable backend, and cloud integration to
+                                        ensure long-term growth.</p>
                                 </div>
                             </div>
 
@@ -424,7 +458,8 @@
                                 </div>
                                 <div class="fbox-content">
                                     <h3>App Maintenance & Updates</h3>
-                                    <p>We provide regular updates, bug fixes, and feature additions post-launch — so your app keeps getting better.</p>
+                                    <p>We provide regular updates, bug fixes, and feature additions post-launch — so
+                                        your app keeps getting better.</p>
                                 </div>
                             </div>
 
@@ -434,7 +469,8 @@
                                 </div>
                                 <div class="fbox-content">
                                     <h3>Business-Ready Solutions</h3>
-                                    <p>Whether you're in retail, healthcare, education, or any other domain — we deliver exactly what your business demands.
+                                    <p>Whether you're in retail, healthcare, education, or any other domain — we deliver
+                                        exactly what your business demands.
                                     </p>
                                 </div>
                             </div>
@@ -463,15 +499,18 @@
                         <div class="col-lg-5 mb-4 mb-lg-0">
                             <img src="https://canvastemplate.com/demos/doctors/images/icons/wave.svg" alt="..."
                                 class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="50">
-                            <h2 class="display-3 fw-bold color all-ts">Static, Dynamic & E-commerce Website Solutions <span
-                                    class="underliner nocolor viewport-detect" data-delay="1000"></span>
+                            <h2 class="display-3 fw-bold color all-ts">Static, Dynamic & E-commerce Website Solutions
+                                <span class="underliner nocolor viewport-detect" data-delay="1000"></span>
                                 <img class="position-relative" style="top: -5px;"
-                                    src="https://img.icons8.com/3d-fluency/globe.png" alt="..."
-                                    width="50"></h2>
-                            <p>We deliver fast, responsive, and feature-rich websites — whether you need a simple static page, a dynamic platform, or a complete e-commerce solution to grow your business online.
+                                    src="https://img.icons8.com/3d-fluency/globe.png" alt="..." width="50">
+                            </h2>
+                            <p>We deliver fast, responsive, and feature-rich websites — whether you need a simple static
+                                page, a dynamic platform, or a complete e-commerce solution to grow your business
+                                online.
                             </p>
                             <a href="#" class="button py-3 px-4 bg-color-2 color h-bg-color h-text-light rounded mx-0"
-                                style="color: #fff !important;">View Projects<i class="bi-arrow-right ms-2 me-0"></i></a>
+                                style="color: #fff !important;">View Projects<i
+                                    class="bi-arrow-right ms-2 me-0"></i></a>
                         </div>
                         <div class="col-lg-6">
                             <!-- Gallery -->
@@ -516,12 +555,16 @@
                             </div>
 
                             <ul class="list-unstyled zaid-contact-info">
-                                <li><a href="https://www.google.com/maps?ll=26.846825,80.965905&z=16&t=m&hl=en&gl=IN&mapclient=embed&cid=3936677689238828352"><i class="bi bi-geo-alt-fill me-2"></i>  Flat 101, Shaligram Building,
-                                    New Jiamau, <br> 1090 Chauraha,
-                                    Lucknow, Uttar Pradesh 226001</a></li>
-                                <li><a href="mailto:info@auctech.in"><i class="bi bi-envelope-fill me-2"></i> info@auctech.in</a>
+                                <li><a
+                                        href="https://www.google.com/maps?ll=26.846825,80.965905&z=16&t=m&hl=en&gl=IN&mapclient=embed&cid=3936677689238828352"><i
+                                            class="bi bi-geo-alt-fill me-2"></i> Flat 101, Shaligram Building,
+                                        New Jiamau, <br> 1090 Chauraha,
+                                        Lucknow, Uttar Pradesh 226001</a></li>
+                                <li><a href="mailto:info@auctech.in"><i class="bi bi-envelope-fill me-2"></i>
+                                        info@auctech.in</a>
                                 </li>
-                                <li><a href="tel:6386452123"><i class="bi bi-telephone-fill me-2"></i> +91 6386452123</a></li>
+                                <li><a href="tel:6386452123"><i class="bi bi-telephone-fill me-2"></i> +91
+                                        6386452123</a></li>
                             </ul>
                         </div>
 
@@ -569,7 +612,7 @@
 
             <div class="zaid-scroll-section" id="last-section">Redirecting...</div>
         </div>
-       
+
     </div>
 
     <script src="js/plugins.min.js"></script>
@@ -646,25 +689,25 @@
             });
         });
     </script>
- <script>
-    let redirected = false;
+    <script>
+        let redirected = false;
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !redirected) {
-          redirected = true;
-          // ⏳ Delay thoda animation feel dene ke liye
-          setTimeout(() => {
-            window.location.href = "https://auctech.in/portfolio";
-          }, 1000); // 1 second delay
-        }
-      });
-    }, { threshold: 0.8 });
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !redirected) {
+                    redirected = true;
+                    // ⏳ Delay thoda animation feel dene ke liye
+                    setTimeout(() => {
+                        window.location.href = "https://auctech.in/portfolio";
+                    }, 1000); // 1 second delay
+                }
+            });
+        }, { threshold: 0.8 });
 
-    const lastSection = document.getElementById("last-section");
-    observer.observe(lastSection);
-  </script>
-      
+        const lastSection = document.getElementById("last-section");
+        observer.observe(lastSection);
+    </script>
+
 </body>
 
 </html>
