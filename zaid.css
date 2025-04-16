@@ -474,3 +474,43 @@ p {
 /* --------- */
 
 
+#redirect-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 9999;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .gate-left, .gate-right {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    z-index: 10000;
+  }
+  
+  .gate-left {
+    left: 0;
+    animation: gateLeft 1.5s forwards;
+  }
+  
+  .gate-right {
+    right: 0;
+    animation: gateRight 1.5s forwards;
+  }
+  
+  @keyframes gateLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @keyframes gateRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+  }
