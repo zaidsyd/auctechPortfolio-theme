@@ -40,8 +40,16 @@
 
         .btn:hover {
             color: var(--bs-btn-hover-color);
-            background-color:green;
+            background-color: green;
             border-color: green;
+        }
+
+        .modal-container {
+            z-index: 2000 !important;
+        }
+
+        .swal2-container {
+            z-index: 100000000 !important;
         }
     </style>
 </head>
@@ -92,8 +100,7 @@
             <div class="header-wrap-clone"></div>
         </header>
         <!-- Bootstrap Modal -->
-        <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true"
-            style="z-index: 99999999;">
+        <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content rounded-4">
                     <div class="modal-header bg-dark text-white">
@@ -102,30 +109,31 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="demoForm">
+                        <form id="demoForm" method="POST" action="" class="contact-form">
                             <div class="mb-3 mt-3">
                                 <label for="fullName" class="form-label">Full
                                     Name</label>
-                                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name"
-                                    required>
+                                <input type="text" class="form-control" id="fullName" name="Name"
+                                    placeholder="Enter your full name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="mobile" class="form-label">Mobile</label>
-                                <input type="tel" class="form-control" id="mobile"
-                                    placeholder="Enter your mobile number" required>
+                                <input type="tel" name="Phone Number" id="mobile" class="form-control"
+                                placeholder="Enter your mobile number" maxlength="10"
+                                pattern="\d{10}" inputmode="numeric" required>
                             </div>
                             <div class="mb-3">
                                 <label for="emailAddress" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="emailAddress"
+                                <input type="email" name="Email" class="form-control" id="emailAddress"
                                     placeholder="Enter your email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="3" placeholder="Your message..."
-                                    required></textarea>
+                                <textarea class="form-control" id="message" name="Message" rows="3"
+                                    placeholder="Your message..." required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100 mt-4">Submit
-                                </button>
+                            <button type="submit" class="btn btn-primary w-100 mt-4" value="Submit" id="submit">Submit
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -617,6 +625,9 @@
 
     <script src="js/plugins.min.js"></script>
     <script src="js/functions.bundle.js"></script>
+    <script src="Google sheet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
         $(document).ready(function () {
             const $sections = $('.zaid-scroll-section');
